@@ -1,6 +1,4 @@
-*.iml
-bin/
 .vscode/
-/target
-
-
+bin/
+lib/
+.settings
