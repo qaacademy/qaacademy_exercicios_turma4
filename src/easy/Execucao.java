@@ -29,15 +29,27 @@ public class Execucao {
         // System.out.println("O Inss a ser pago será:
         // "+exercicio07.calcularInss(1045.00));
 
-        Exercicio07 exercicio07 = new Exercicio07();
-        Exercicio08 exercicio08 = new Exercicio08();
-        double salario = 5000.00;
-        double impostoRenda = exercicio08.calcularImpostoDeRenda(2000.00);
-        double valorInss = exercicio07.calcularInss(salario);
-        System.out.println("O Valor do Imposto de renda será: " + impostoRenda);
-        System.out.println("O Valor do Salario Bruto será: " + salario);
-        System.out.println(
-                "O Valor do salario liquido será " + exercicio08.calcularSalarioLiquido(salario, impostoRenda, valorInss));
+        // Exercicio07 exercicio07 = new Exercicio07();
+        // Exercicio08 exercicio08 = new Exercicio08();
+        // double salario = 5000.00;
+        // double impostoRenda = exercicio08.calcularImpostoDeRenda(2000.00);
+        // double valorInss = exercicio07.calcularInss(salario);
+        // System.out.println("O Valor do Imposto de renda será: " + impostoRenda);
+        // System.out.println("O Valor do Salario Bruto será: " + salario);
+        // System.out.println(
+        // "O Valor do salario liquido será " +
+        // exercicio08.calcularSalarioLiquido(salario, impostoRenda, valorInss));
 
+        Exercicio09 exercicio09 = new Exercicio09();
+        int[] vetorTabuada = exercicio09.calcularTabuada(10);
+        exibirVetor(vetorTabuada);
+    }
+
+    public static void exibirVetor(int[] vetorParaImprimir) {
+        int i = 0;
+        while (i < vetorParaImprimir.length) {
+            System.out.println(vetorParaImprimir[i]);
+            i++;
+        }
     }
 }
