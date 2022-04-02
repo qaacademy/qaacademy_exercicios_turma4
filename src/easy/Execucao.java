@@ -23,7 +23,10 @@ public class Execucao {
         // System.out.println("A media dos números digitados é: " +
         // exercicio05.calcularMedia(10, 20, 30));
 
-        Exercicio06 exercicio06 = new Exercicio06();
-        System.out.println(exercicio06.verificarAprovacao(5, 5));
+        // Exercicio06 exercicio06 = new Exercicio06();
+        // System.out.println(exercicio06.verificarAprovacao(5, 5));
+
+        Exercicio07 exercicio07 = new Exercicio07(); 
+        System.out.println("O Inss a ser pago será: "+exercicio07.calcularInss(1045.00));
     }
 }
