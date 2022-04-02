@@ -1,30 +1,24 @@
 package easy;
 
+import javax.swing.JOptionPane;
+
 public class Exercicio05 {
 
-    public int soma(int primeiroNumero, int segundoNumero, int terceiroNumero) {
-        int soma;
-        soma = primeiroNumero + segundoNumero + terceiroNumero;
+    public int calcularSoma(int numero1, int numero2, int numero3) {
+        int soma = numero1 + numero2 + numero3;
         return soma;
     }
 
-    public int subtracao(int primeiroNumero, int segundoNumero, int terceiroNumero) {
-        int subtracao;
-        subtracao = primeiroNumero - segundoNumero - terceiroNumero;
-        return subtracao;
+    public int calcularSubtracao(int numero1, int numero2, int numero3) {
+        return numero1 - numero2 - numero3;
     }
 
-    public int multiplicacao(int primeiroNumero, int segundoNumero, int terceiroNumero) {
-        int multiplicacao;
-        multiplicacao = primeiroNumero * segundoNumero * terceiroNumero;
-        return multiplicacao;
+    public int calcularMultiplicacao(int numero1, int numero2, int numero3) {
+        return numero1 * numero2 * numero3;
     }
 
-    public int media(int soma) {
-        int media;
-        media = soma / 3;
-        return media;
-
+    public double calcularMedia(double numero1, double numero2, double numero3) {
+        return (numero1 + numero2 + numero3) / 3;
     }
-
+   
 }
