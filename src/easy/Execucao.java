@@ -1,5 +1,7 @@
 package easy;
 
+import medium.Exercicio01;
+
 public class Execucao {
     public static void main(String[] args) {
         // Exercicio02 exercicio02 = new Exercicio02();
@@ -56,14 +58,30 @@ public class Execucao {
         // System.out.println("O Valor total são : " + (valorInvestimento + valorJuros));
 
 
-        Exercicio11 exercicio11 = new Exercicio11(); 
-        System.out.println(exercicio11.somarDois(10));
+        // Exercicio11 exercicio11 = new Exercicio11(); 
+        // System.out.println(exercicio11.somarDois(10));
 
-        exibirVetor(exercicio11.somarDoisComVetor(10));
+        // exibirVetor(exercicio11.somarDoisComVetor(10));
+
+
+        Exercicio01 exercicio01 = new Exercicio01(); 
+        String [] vetorParImpar = exercicio01.verificarNumerosParImpar(); 
+        exibirVetor(vetorParImpar);
+        exibirVetor(exercicio01.verificarNumerosParImpar());
+
+
        
     }
 
     public static void exibirVetor(int[] vetorParaImprimir) {
+        int i = 0;
+        while (i < vetorParaImprimir.length) {
+            System.out.println(vetorParaImprimir[i]);
+            i++;
+        }
+    }
+
+    public static void exibirVetor(String[] vetorParaImprimir) {
         int i = 0;
         while (i < vetorParaImprimir.length) {
             System.out.println(vetorParaImprimir[i]);

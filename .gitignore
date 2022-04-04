@@ -3,3 +3,5 @@ bin/
 lib/
 .settings
 /target
+.DS_Store
+src/.DS_Store
