@@ -4,16 +4,17 @@ import javax.swing.JOptionPane;
 
 public class Exercicio09 {
 
-    public static void main(String[] args) {
-        int numeroDigitado, i = 1;
+    public int[] calcularTabuada(int numeroDigitado) {
 
-        String numeroDigitadoStg = JOptionPane.showInputDialog("Digite um numero para calcular a tabuada");
-        numeroDigitado = Integer.parseInt(numeroDigitadoStg);
-
+        int[] vetorTabuada = new int[10];
+        int i = 1;
         while (i <= 10) {
-            System.out.println(numeroDigitado * i);
+            vetorTabuada[i-1] = numeroDigitado * i;
             i++;
         }
+        return vetorTabuada;
     }
+
+
 
 }
