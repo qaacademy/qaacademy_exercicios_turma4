@@ -25,12 +25,29 @@ public class Execucao {
         // System.out.println(exercicio05.verificaMenorValor(vetorNumeros));
 
 
-        Exercicio06 exercicio06 = new Exercicio06(); 
-        System.out.println(exercicio06.calculaFatorial(5));
+        // Exercicio06 exercicio06 = new Exercicio06(); 
+        // System.out.println(exercicio06.calculaFatorial(5));
+
+        // Exercicio07 exercicio07 = new Exercicio07(); 
+        // exibirVetor(exercicio07.preencheVetorMeses());
+
+        String [] vetorAlunos = {"Flavio", "Reinaldo", "Samuel", "Edmond", "Pedro"}; 
+        int [] vetorNumeroAlunos = {1,2,3,4,5}; 
+
+        Exercicio09 exercicio09 = new Exercicio09(); 
+        exercicio09.exibeAlunosENumeros(vetorAlunos,vetorNumeroAlunos);
 
     }
 
     public static void exibirVetor(int[] vetorParaImprimir) {
+        int i = 0;
+        while (i < vetorParaImprimir.length) {
+            System.out.println(vetorParaImprimir[i]);
+            i++;
+        }
+    }
+
+    public static void exibirVetor(String[] vetorParaImprimir) {
         int i = 0;
         while (i < vetorParaImprimir.length) {
             System.out.println(vetorParaImprimir[i]);
