@@ -24,19 +24,21 @@ public class Execucao {
         // Exercicio05 exercicio05 = new Exercicio05();
         // System.out.println(exercicio05.verificaMenorValor(vetorNumeros));
 
-
-        // Exercicio06 exercicio06 = new Exercicio06(); 
+        // Exercicio06 exercicio06 = new Exercicio06();
         // System.out.println(exercicio06.calculaFatorial(5));
 
-        // Exercicio07 exercicio07 = new Exercicio07(); 
+        // Exercicio07 exercicio07 = new Exercicio07();
         // exibirVetor(exercicio07.preencheVetorMeses());
 
-        String [] vetorAlunos = {"Flavio", "Reinaldo", "Samuel", "Edmond", "Pedro"}; 
-        int [] vetorNumeroAlunos = {1,2,3,4,5}; 
+        // String [] vetorAlunos = {"Flavio", "Reinaldo", "Samuel", "Edmond", "Pedro"};
+        // int [] vetorNumeroAlunos = {1,2,3,4,5};
 
-        Exercicio09 exercicio09 = new Exercicio09(); 
-        exercicio09.exibeAlunosENumeros(vetorAlunos,vetorNumeroAlunos);
+        // Exercicio09 exercicio09 = new Exercicio09();
+        // exercicio09.exibeAlunosENumeros(vetorAlunos,vetorNumeroAlunos);
 
+        Exercicio10 exercicio10 = new Exercicio10();
+        System.out.println("Exibe o valor do termo: " + exercicio10.calcularFibonacci(10));
+        exibirVetor(exercicio10.calcularFibonacciVetor(10));
     }
 
     public static void exibirVetor(int[] vetorParaImprimir) {
